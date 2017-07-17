@@ -55,7 +55,7 @@ namespace Comp123___Assignment_4
             return returnValue;
         }
 
-        public bool HasOxygen()
+        public bool Habitable()
         {
             bool returnValue = false;
 

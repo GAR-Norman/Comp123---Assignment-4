@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*
  * Name: Gabriel Norman
  * Date: July 17, 2017
- * Description: This is the GiantPlanet class
+ * Description: This is the TerrestrialPlanet class
  * Version: 0.3 - Created the TerrestrialPlanet class
  */
 namespace Comp123___Assignment_4
@@ -19,7 +19,6 @@ namespace Comp123___Assignment_4
         // PRIVATE INSTANCE VARIABLES
         private bool _oxygen;
 
-        //PUBLIC PROPERTIES -- NONE 
 
         //PUBLIC PROPERTIES - There are None 
 
@@ -38,7 +37,34 @@ namespace Comp123___Assignment_4
             : base(name, diameter, mass)
         {
             this._oxygen = oxygen; 
+             
+        }
 
+        //PRIVATE METHODS 
+
+        //PUBLIC METHODS
+        public bool HasMoons()
+        {
+            bool returnValue = false;
+
+            if (MoonCount > 0)
+            {
+                returnValue = true;
+            }
+
+            return returnValue;
+        }
+
+        public bool HasOxygen()
+        {
+            bool returnValue = false;
+
+            if (_oxygen == true)
+            {
+                returnValue = true;
+            }
+
+            return returnValue;
         }
     }
 }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  */
 namespace Comp123___Assignment_4
 {
-    public class GiantPlanet : Planet
+    public class GiantPlanet : Planet, IHasMoons
     {
         // PRIVATE INSTANCE VARIABLES
         private string _type;

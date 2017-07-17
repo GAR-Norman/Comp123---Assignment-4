@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 /*
  * Name: Gabriel Norman
  * Date: July 17, 2017
- * Description: This is the IHasMoons interface
- * Version: 0.2 - Created the IHasMoons interface with method header
+ * Description: This is the IHasRings interface
+ * Version: 0.5 - Created the IHasRings interface with method header
  */
 namespace Comp123___Assignment_4
 {
-    interface IHasMoons
+    interface IHasRings
     {
-        bool HasMoons(); 
-
+        bool HasRings();
     }
 }

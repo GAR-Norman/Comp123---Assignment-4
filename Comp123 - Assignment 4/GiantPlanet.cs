@@ -12,7 +12,8 @@ using System.Threading.Tasks;
  */
 namespace Comp123___Assignment_4
 {
-    public class GiantPlanet : Planet, IHasMoons
+     
+    public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         // PRIVATE INSTANCE VARIABLES
         private string _type;
@@ -54,7 +55,7 @@ namespace Comp123___Assignment_4
             return returnValue;
         }
 
-        public bool HasRings()
+         public bool HasRings()
         {
             bool returnValue = false;
 

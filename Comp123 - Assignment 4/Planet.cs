@@ -49,6 +49,8 @@ namespace Comp123___Assignment_4
             }
             set
             {
+                
+                
                 this._moonCount = value;
             }
         }
@@ -69,6 +71,7 @@ namespace Comp123___Assignment_4
             }
             set
             {
+                
                 this._orbitalPeriod = value;
             }
         }
@@ -81,6 +84,7 @@ namespace Comp123___Assignment_4
             }
             set
             {
+               
                 this._ringCount = value;
             }
         }
@@ -110,6 +114,7 @@ namespace Comp123___Assignment_4
             this._name = name;
             this._diameter = diameter;
             this._mass = mass;
+  
 
         }
         //PRIVATE METHODS - (THERE ARE NONE)
@@ -119,7 +124,7 @@ namespace Comp123___Assignment_4
         {
             string returnString;
 
-            returnString = string.Format("Planet Name: {0}\n Planet Diameter: {1}\nPlanet Mass: {2}\n Planet's MoonCount: {3}\n Planet's Ring#: {4}\n Planet's Orbital Period: {5}\n  Planet's Rotation Period: {6}\n\n", Name, Diameter, Mass, MoonCount, RingCount, OrbitalPeriod, RotationPeriod );
+            returnString = string.Format("Planet Name: {0}\n Planet Diameter: {1} KM\nPlanet Mass: {2} Thousand KG\n\n", Name, Diameter, Mass );
             return returnString;
         }
     }

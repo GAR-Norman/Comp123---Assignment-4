@@ -14,7 +14,7 @@ namespace Comp123___Assignment_4
     /// <summary>
     /// This is the TerrestrialPlanet Class
     /// </summary>
-    public class TerrestrialPlanet : Planet
+    public class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
         // PRIVATE INSTANCE VARIABLES
         private bool _oxygen;
@@ -55,7 +55,7 @@ namespace Comp123___Assignment_4
             return returnValue;
         }
 
-        public bool Habitable()
+         public bool Habitable()
         {
             bool returnValue = false;
 
@@ -66,5 +66,6 @@ namespace Comp123___Assignment_4
 
             return returnValue;
         }
+
     }
 }

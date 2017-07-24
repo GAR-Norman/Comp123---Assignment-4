@@ -11,7 +11,7 @@ using System.Threading.Tasks;
  */
 namespace Comp123___Assignment_4
 {
-    interface IHasRings
+   public interface IHasRings
     {
         bool HasRings();
     }

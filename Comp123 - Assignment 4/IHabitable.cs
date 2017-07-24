@@ -11,8 +11,8 @@ using System.Threading.Tasks;
  */
 namespace Comp123___Assignment_4
 {
-    interface IHabitable
+    public interface IHabitable
     {
-        bool Habitable();
+       bool Habitable();
     }
 }

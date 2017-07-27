@@ -25,6 +25,8 @@ namespace Comp123___Assignment_4
         private double _rotationPeriod;
 
         //PUBLIC PROPERTIES
+        int moons = 6;
+
         public double Diameter
         {
             get
@@ -49,8 +51,6 @@ namespace Comp123___Assignment_4
             }
             set
             {
-                
-                
                 this._moonCount = value;
             }
         }
@@ -97,6 +97,7 @@ namespace Comp123___Assignment_4
             }
             set
             {
+             
                 this._rotationPeriod = value;
             }
         }
@@ -114,7 +115,9 @@ namespace Comp123___Assignment_4
             this._name = name;
             this._diameter = diameter;
             this._mass = mass;
-  
+            MoonCount = 5;
+            RingCount = 5; 
+
 
         }
         //PRIVATE METHODS - (THERE ARE NONE)
@@ -124,7 +127,7 @@ namespace Comp123___Assignment_4
         {
             string returnString;
 
-            returnString = string.Format("Planet Name: {0}\n Planet Diameter: {1} KM\nPlanet Mass: {2} Thousand KG\n\n", Name, Diameter, Mass );
+            returnString = string.Format("Planet Name: {0}\n Planet Diameter: {1} KM\nPlanet Mass: {2} Thousand KG/n", Name, Diameter, Mass );
             return returnString;
         }
     }
